@@ -1,0 +1,10 @@
+<div class="comments">
+  <div *ngFor="let comment of message?.comments" class="alert alert-info">
+    <p class="mb-1 text-danger">
+<!--      <span class="text-danger">Author</span>-->
+      {{ comment?.author?.name }} - {{ comment.createdAt | date: 'medium' }}
+    </p>
+    <p class="mb-0">{{ comment.content }}</p>
+  </div>
+  <app-create-comment [message]="message"></app-create-comment>
+</div>

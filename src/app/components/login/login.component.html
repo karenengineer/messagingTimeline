@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<div class="modal-dialog mt-80">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center">Enter Your Username</h5>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="usernameForm">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" formControlName="username" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="saveUsername()">Save</button>
+      </div>
+    </div>
+  </div>

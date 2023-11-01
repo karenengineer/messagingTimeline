@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <form [formGroup]="messageForm" (ngSubmit)="postComment()">
+        <div class="form-group">
+          <input type="text"
+                 formControlName="comment"
+                 class="form-control"
+                 placeholder="Write your comment">
+        </div>
+        <button type="submit"
+                class="btn btn-primary"
+                [disabled]="messageForm.invalid">Comment</button>
+      </form>
+    </div>
+  </div>
+</div>

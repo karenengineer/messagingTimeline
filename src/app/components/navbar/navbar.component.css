@@ -1,0 +1,18 @@
+.scale-on-hover {
+  transition: transform 0.1s; /* Add a smooth transition */
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.2); /* Scale by a factor of 1.2 on hover */
+}
+.user-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #a3aab2; /* Customize the background color */
+  color: #fff; /* Customize the font color */
+  font-size: 27px; /* Customize the font size */
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
