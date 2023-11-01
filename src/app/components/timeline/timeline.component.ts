@@ -90,6 +90,7 @@ export class TimelineComponent implements OnInit {
             name: res.result.name,
             id: res.result.id,
           }
+
         }
       })
   }
